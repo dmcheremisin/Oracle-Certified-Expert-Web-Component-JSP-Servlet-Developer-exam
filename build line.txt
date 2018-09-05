@@ -1,0 +1,2 @@
+javac -d classes src\com\example\model\BeerExpert.java
+javac -classpath c:\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d classes src\com\example\web\BeerSelect.java

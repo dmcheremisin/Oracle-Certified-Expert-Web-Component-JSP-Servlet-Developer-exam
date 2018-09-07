@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://wwww.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+	<context-param>
+		<param-name>adminMail</param-name>
+		<param-value>admin@admin.com</param-value>
+	</context-param>
+	<context-param>
+		<param-name>managerMail</param-name>
+		<param-value>manager@manager.com</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>Servlet Params</servlet-name>
+		<servlet-class>com.example.web.ServletParams</servlet-class>
+
+		<init-param>
+			<param-name>userMail</param-name>
+			<param-value>user@mail.ru</param-value>
+		</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Servlet Params</servlet-name>
+		<url-pattern>/get-params</url-pattern>
+	</servlet-mapping>
+</web-app>

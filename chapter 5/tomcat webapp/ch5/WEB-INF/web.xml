@@ -27,4 +27,14 @@
 		<servlet-name>Servlet Params</servlet-name>
 		<url-pattern>/get-params</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Jsp params</servlet-name>
+		<servlet-class>com.example.web.InitParamsThroughServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Jsp params</servlet-name>
+		<url-pattern>/show-params</url-pattern>
+	</servlet-mapping>
 </web-app>

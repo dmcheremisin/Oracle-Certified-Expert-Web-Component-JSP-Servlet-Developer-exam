@@ -14,9 +14,11 @@ public class ServletParams extends HttpServlet {
 		writer.println("<h1>Servlet parameter values</h1>");
 
 		writer.println("<h2>Context parameters</h2>");
-		Enumeration<String> contextParams = getServletContext().getInitParameterNames();
+		ServletContext ctx = getServletContext();
+		Enumeration<String> contextParams = ctx.getInitParameterNames();
 		while(contextParams.hasMoreElements()) {
-			writer.println("<p>" + contextParams.nextElement() + "</p>");
+			String name = contextParams.nextElement();
+			writer.println("<p>" + name + " : " + ctx.getInitParameter(name) + "</p>");
 		}
 
 		writer.println("<h2>Servlet init parameters</h2>");

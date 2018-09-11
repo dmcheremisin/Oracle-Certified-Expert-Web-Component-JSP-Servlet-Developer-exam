@@ -12,6 +12,14 @@
 		<param-name>managerMail</param-name>
 		<param-value>manager@manager.com</param-value>
 	</context-param>
+	<context-param>
+		<param-name>dogBreed</param-name>
+		<param-value>Great Dane</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>com.example.listeners.MyServletContextListener</listener-class>
+	</listener>
 
 	<servlet>
 		<servlet-name>Servlet Params</servlet-name>
@@ -40,5 +48,14 @@
 	<servlet-mapping>
 		<servlet-name>Jsp params</servlet-name>
 		<url-pattern>/show-params</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ContextListenerTest</servlet-name>
+		<servlet-class>com.example.web.ServletContextListenerTest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContextListenerTest</servlet-name>
+		<url-pattern>/test-context-listener</url-pattern>
 	</servlet-mapping>
 </web-app>

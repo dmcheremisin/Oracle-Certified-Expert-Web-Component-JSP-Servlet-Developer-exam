@@ -5,6 +5,10 @@
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
 
+	<session-config>
+		<session-timeout>15</session-timeout>
+	</session-config>
+
 	<servlet>
 		<servlet-name>isNewSession</servlet-name>
 		<servlet-class>com.example.web.IsNewSessionServlet</servlet-class>
@@ -21,5 +25,23 @@
 	<servlet-mapping>
 		<servlet-name>Get Session False</servlet-name>
 		<url-pattern>/getSessionFalse</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Set Cookie</servlet-name>
+		<servlet-class>com.example.cookies.SetCookieName</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Set Cookie</servlet-name>
+		<url-pattern>/set-cookie-name</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Test Cookie</servlet-name>
+		<servlet-class>com.example.cookies.TestCookie</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Test Cookie</servlet-name>
+		<url-pattern>/test-cookie</url-pattern>
 	</servlet-mapping>
 </web-app>

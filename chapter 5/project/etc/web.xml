@@ -58,4 +58,13 @@
 		<servlet-name>ContextListenerTest</servlet-name>
 		<url-pattern>/test-context-listener</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Session Dog Binding</servlet-name>
+		<servlet-class>com.example.web.MySessionBindingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Session Dog Binding</servlet-name>
+		<url-pattern>/test-session-dog</url-pattern>
+	</servlet-mapping>
 </web-app>

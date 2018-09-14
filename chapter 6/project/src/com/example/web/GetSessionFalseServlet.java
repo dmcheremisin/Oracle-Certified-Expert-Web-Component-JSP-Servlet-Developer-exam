@@ -30,5 +30,8 @@ public class GetSessionFalseServlet extends HttpServlet {
             writer.println("<h2>There was a session</h2>");
         }
 
+        session.setAttribute("value", 10);
+        session.setAttribute("falseServlet", "GetSessionFalseServlet has already run once");
+
     }
 }

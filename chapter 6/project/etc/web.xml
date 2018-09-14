@@ -48,4 +48,8 @@
 	<listener>
 		<listener-class>com.example.listeners.SessionCounter</listener-class>
 	</listener>
+
+	<listener>
+		<listener-class>com.example.listeners.AttributeListener</listener-class>
+	</listener>
 </web-app>

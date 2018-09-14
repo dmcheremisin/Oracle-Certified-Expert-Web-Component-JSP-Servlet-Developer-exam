@@ -31,5 +31,8 @@ public class IsNewSessionServlet extends HttpServlet {
             writer.println("<h2>Welcome back</h2>");
         }
 
+        session.setAttribute("isNewSession", "IsNewSessionServlet has already run once");
+        session.removeAttribute("value");
+
     }
 }

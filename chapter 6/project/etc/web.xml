@@ -44,4 +44,8 @@
 		<servlet-name>Test Cookie</servlet-name>
 		<url-pattern>/test-cookie</url-pattern>
 	</servlet-mapping>
+
+	<listener>
+		<listener-class>com.example.listeners.SessionCounter</listener-class>
+	</listener>
 </web-app>

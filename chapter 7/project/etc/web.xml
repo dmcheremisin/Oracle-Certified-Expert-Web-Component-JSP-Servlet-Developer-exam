@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
+
 	<servlet>
-		<servlet-name>File Download</servlet-name>
-		<servlet-class>com.example.web.FileDownload</servlet-class>
+		<servlet-name>Process Form</servlet-name>
+		<servlet-class>com.example.web.FormProcessingServlet</servlet-class>
 	</servlet>
-	
 	<servlet-mapping>
-		<servlet-name>File Download</servlet-name>
-		<url-pattern>/load-file</url-pattern>
+		<servlet-name>Process Form</servlet-name>
+		<url-pattern>/process</url-pattern>
 	</servlet-mapping>
 </web-app>

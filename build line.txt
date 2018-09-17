@@ -2,3 +2,4 @@ ch1: javac -d classes src\com\example\model\BeerExpert.java
 ch4: javac -classpath c:\Java\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d classes src\com\example\web\*.java
 ch5: javac -cp c:\Java\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d classes src\com\example\web\*.java src\com\example\listeners\*.java src\com\example\models\*.java
 ch6: javac -cp c:\Java\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d classes src\com\example\web\*.java src\com\example\cookies\*.java src\com\example\listeners\*.java
+ch7: javac -cp c:\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d classes src\com\example\web\*.java

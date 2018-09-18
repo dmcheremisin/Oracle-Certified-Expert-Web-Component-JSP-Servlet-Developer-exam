@@ -13,8 +13,13 @@ public class FormProcessingServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String hobby = request.getParameter("hobby");
+        request.setAttribute("hobby", hobby);
+
         List<String> names = Arrays.asList("Fred", "Pradeep", "Philippe");
         request.setAttribute("friends", names);
+
+        getServletContext();
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("hobbyFriends.jsp");
         requestDispatcher.forward(request, response);

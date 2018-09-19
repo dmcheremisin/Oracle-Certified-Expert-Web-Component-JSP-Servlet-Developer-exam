@@ -5,6 +5,16 @@
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
 
+	<!--<jsp-config>-->
+		<!--<jsp-property-group>-->
+			<!--<url-pattern>*.jsp</url-pattern>-->
+			<!--Disables all scripting elements in all jsp pages-->
+			<!--<scripting-invalid>true</scripting-invalid>-->
+			<!--Disables all el-directives for all jsp pages-->
+			<!--<el-ignored>true</el-ignored>-->
+		<!--</jsp-property-group>-->
+	<!--</jsp-config>-->
+
 	<servlet>
 		<servlet-name>Process Form</servlet-name>
 		<servlet-class>com.example.web.FormProcessingServlet</servlet-class>

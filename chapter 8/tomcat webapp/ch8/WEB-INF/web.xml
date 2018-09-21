@@ -5,5 +5,13 @@
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
 
+	<servlet>
+		<servlet-name>Nested Classes</servlet-name>
+		<servlet-class>com.example.web.NestedClassesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Nested Classes</servlet-name>
+		<url-pattern>/testNested</url-pattern>
+	</servlet-mapping>
 
 </web-app>

@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class NestedClassesServlet extends HttpServlet {
     @Override
@@ -20,7 +22,12 @@ public class NestedClassesServlet extends HttpServlet {
         dog.setName("Fluffy");
         human.setDog(dog);
 
+        Map<String, String> map = new HashMap<>();
+        map.put("first", "First value");
+        map.put("second", "Second value");
+
         request.setAttribute("human", human);
+        request.setAttribute("map", map);
 
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("NestedClassesTest.jsp");
         requestDispatcher.forward(request, response);

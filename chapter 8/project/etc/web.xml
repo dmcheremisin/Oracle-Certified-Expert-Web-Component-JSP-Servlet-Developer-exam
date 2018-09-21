@@ -5,6 +5,11 @@
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
 
+	<context-param>
+		<param-name>mainEmail</param-name>
+		<param-value>dm@ch.com</param-value>
+	</context-param>
+
 	<servlet>
 		<servlet-name>Nested Classes</servlet-name>
 		<servlet-class>com.example.web.NestedClassesServlet</servlet-class>

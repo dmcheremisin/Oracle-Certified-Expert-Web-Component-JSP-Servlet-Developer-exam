@@ -14,4 +14,13 @@
 		<url-pattern>/testNested</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>Operators</servlet-name>
+		<servlet-class>com.example.web.OperatorsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Operators</servlet-name>
+		<url-pattern>/operatorsTest</url-pattern>
+	</servlet-mapping>
+
 </web-app>

@@ -14,5 +14,14 @@
 		<url-pattern>/testLoop</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>Map test</servlet-name>
+		<servlet-class>com.example.web.MapSetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Map test</servlet-name>
+		<url-pattern>/testMap</url-pattern>
+	</servlet-mapping>
+
 
 </web-app>

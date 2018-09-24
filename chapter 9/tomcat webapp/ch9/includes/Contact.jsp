@@ -7,9 +7,8 @@
     <c:param name="subTitle" value="We take the sting out of SOAP." />
 </c:import>
 
-<br>
-<em>We can help.</em> <br><br>
-Contact us at: ${initParam.mainEmail}
+<br />
+<em>We can help.</em>
 
 </body>
 </html>

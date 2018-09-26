@@ -14,4 +14,10 @@
         <body-content>scriptless</body-content>
     </tag>
 
+    <tag>
+        <name>setAttribute</name>
+        <tag-class>com.example.tags.SetTagAttributeTest</tag-class>
+        <body-content>scriptless</body-content>
+    </tag>
+
 </taglib>

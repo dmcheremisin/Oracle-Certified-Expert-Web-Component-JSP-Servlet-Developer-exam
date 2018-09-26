@@ -6,8 +6,6 @@
     This the body of the tag
 </s:showBody>
 
-</br>
-
 <s:setAttribute>
     Message is: ${message}
 </s:setAttribute>

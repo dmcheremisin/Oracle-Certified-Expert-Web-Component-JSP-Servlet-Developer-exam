@@ -5,5 +5,13 @@
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 	version="2.4">
 
+	<servlet>
+		<servlet-name>Movie Servlet</servlet-name>
+		<servlet-class>com.example.web.MoviesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Movie Servlet</servlet-name>
+		<url-pattern>/movie</url-pattern>
+	</servlet-mapping>
 
 </web-app>

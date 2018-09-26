@@ -2,9 +2,9 @@
 <html>
 <body>
 
-<myTags:Header2>
-    We take the sting out of SOAP. OK, so it’s not Jini,<br>
-    but we’ll help you get through it with the least<br>
+<myTags:Header2 fontColor="#660099">
+    We take the sting out of SOAP. OK, so it's not Jini,<br>
+    but we'll help you get through it with the least<br>
     frustration and hair loss.
 </myTags:Header2>
 

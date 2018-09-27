@@ -5,4 +5,4 @@ ch6: javac -cp c:\Java\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d cla
 ch7: javac -cp c:\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d classes src\com\example\web\*.java
 ch8: javac -cp c:\Java\apache-tomcat-8.5.16\lib\servlet-api.jar;classes;. -d classes src\com\example\model\*.java src\com\example\web\*.java src\com\example\nestedClasses\*.java src\com\example\function\*.java
 ch9: javac -cp c:\apache-tomcat-8.5.16\lib\*;classes;. -d classes src\com\example\web\*.java src\com\example\tag\*.java
-ch10: javac -cp c:\Java\apache-tomcat-8.5.16\lib\*;classes;. -d classes src\com\example\tags\*.java src\com\example\web\*.java
+ch10: javac -cp c:\apache-tomcat-8.5.16\lib\*;classes;. -d classes src\com\example\tags\*.java src\com\example\web\*.java

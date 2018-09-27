@@ -9,10 +9,21 @@ public class ClassicTagEmptyBody extends TagSupport {
     public int doStartTag() throws JspException {
         JspWriter out = pageContext.getOut();
         try {
-            out.println("classic tag output");
-        } catch (IOException ex) {
-            throw new JspException("IOException- " + ex.toString());
+            out.println("in the start tag <br />");
+        } catch (IOException e) {
+            throw new JspException("IOException- " + e.toString());
         }
         return SKIP_BODY;
+    }
+
+    @Override
+    public int doEndTag() throws JspException {
+        JspWriter out = pageContext.getOut();
+        try{
+            out.println("in end tag");
+        } catch (IOException e) {
+            throw new JspException("IOException- " + e.toString());
+        }
+        return EVAL_PAGE;
     }
 }

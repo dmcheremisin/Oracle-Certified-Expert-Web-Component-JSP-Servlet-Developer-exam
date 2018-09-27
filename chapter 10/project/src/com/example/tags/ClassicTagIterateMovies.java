@@ -5,10 +5,11 @@ import javax.servlet.jsp.tagext.TagSupport;
 
 public class ClassicTagIterateMovies extends TagSupport {
     String[] movies = {"Kill Bill", "Matrix", "Skyscraper"};
-    int movieCounter;
+    int movieCounter = 0;
 
     public int doStartTag() throws JspException {
-        movieCounter = 0;
+        pageContext.setAttribute("movie", movies[movieCounter]);
+        movieCounter++;
         return EVAL_BODY_INCLUDE;
     }
 

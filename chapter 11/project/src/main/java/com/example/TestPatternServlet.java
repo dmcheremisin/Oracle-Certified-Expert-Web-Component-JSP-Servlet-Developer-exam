@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 /**
  * Created by Dmitrii on 28.09.2018.
  */
-public class TestServlet extends HttpServlet {
+public class TestPatternServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -18,7 +18,7 @@ public class TestServlet extends HttpServlet {
         writer.println("<html>" +
                 "<head></head>" +
                 "<body>" +
-                "<h1 align='center'> This is Test pattern url/* servlet </h1>" +
+                "<h1 align='center'> This is Test pattern url/*.extension servlet </h1>" +
                 "</html>");
     }
 }

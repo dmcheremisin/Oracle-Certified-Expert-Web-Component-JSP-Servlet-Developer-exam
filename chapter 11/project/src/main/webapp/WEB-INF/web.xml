@@ -11,16 +11,42 @@
 
     <error-page>
         <error-code>404</error-code>
+        <location>/notFound.jsp</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
         <location>/error.jsp</location>
     </error-page>
 
     <servlet>
+        <servlet-name>Test Fault</servlet-name>
+        <jsp-file>/testFault.jsp</jsp-file>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test Fault</servlet-name>
+        <url-pattern>/testFault</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Test</servlet-name>
         <servlet-class>com.example.TestServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>Test</servlet-name>
-        <url-pattern>/test</url-pattern>
+        <url-pattern>/test/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Test pattern</servlet-name>
+        <servlet-class>com.example.TestPatternServlet</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test pattern</servlet-name>
+        <url-pattern>*.php</url-pattern>
     </servlet-mapping>
 
 </web-app>

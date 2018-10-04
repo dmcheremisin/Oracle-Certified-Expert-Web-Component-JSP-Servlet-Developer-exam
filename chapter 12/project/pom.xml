@@ -9,6 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <properties>
+        <tomcat_dir>C:\apache-tomcat-8.5.16</tomcat_dir>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -33,12 +37,42 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                    <outputDirectory>C:\Java\apache-tomcat-8.5.16\webapps\</outputDirectory>
+                    <outputDirectory>${tomcat_dir}\webapps\</outputDirectory>
                 </configuration>
             </plugin>
+            <!--<plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        &lt;!&ndash; here the phase you need &ndash;&gt;
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${tomcat_dir}\conf</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src\main\conf\</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
         </plugins>
+        <resources>
+            <resource>
+                <filtering>true</filtering><!-- if it is neccessary -->
+                <directory>${project.basedir}/src/main/conf</directory><!-- from -->
+                <targetPath>${tomcat_dir}\conf</targetPath><!-- to -->
+                <includes><!-- what -->
+                    <include>tomcat-users.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
-
-
-
 </project>
